@@ -1,0 +1,9 @@
+{% macro menu(items) %}
+<header style="background-color:#CCCCCC;"><nav><ul style="margin:0;padding:0;">
+<li style="display:inline;"><a href="/" title="home">🏠</a></li>
+{% for item in items %}
+<li style="display:inline;"><a href="/{{item}}">{{item}}</a></li>
+{% endfor %}
+<li style="display:inline;"><a href="/atom.xml" title="feed"><img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg" width="2.5%" height="2.5%"></img></a></li>
+</ul><nav></header>
+{% endmacro menu %}
